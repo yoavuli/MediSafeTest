@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listview_background_color">
+
+
+    <Spinner
+        android:id="@+id/spnSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_background"
+        android:entries="@array/sort_options"
+        android:gravity="center"
+        android:paddingEnd="30dp"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/spnSort"
+        android:layout_alignTop="@id/spnSort"
+        android:layout_toStartOf="@id/spnSort"
+        android:text="@string/sort_title"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="7dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/spnSort"
+        android:layout_alignEnd="@id/spnSort"
+        android:layout_alignTop="@id/spnSort"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/spinner_arrow"
+        android:gravity="center_vertical"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spnSort" />
+
+</RelativeLayout>

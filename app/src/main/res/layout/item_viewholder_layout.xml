@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:background="@drawable/list_item_background"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/textLayout"
+        android:layout_width="200dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:text="Name"/>
+
+    <TextView
+        android:id="@+id/txtLocalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtName"
+        android:layout_marginTop="7dp"
+        android:textSize="15sp"
+        tools:text="Native Name"/>
+
+    <TextView
+        android:id="@+id/txtPopulationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/txtLocalName"
+        android:gravity="center"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:text="@string/population_title"/>
+
+    <TextView
+        android:id="@+id/txtPopulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/txtPopulationLabel"
+        android:layout_alignTop="@id/txtPopulationLabel"
+        android:layout_alignBottom="@id/txtPopulationLabel"
+        android:textSize="15sp"
+        tools:text="134853434"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgFlag"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_toEndOf="@id/textLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/img_content_description" />
+
+
+</RelativeLayout>

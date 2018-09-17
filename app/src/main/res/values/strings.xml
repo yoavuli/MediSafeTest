@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MediSafeTest</string>
+    <string name="sort_title"> Sort By</string>
+    <string name="spinner_arrow">^</string>
+    <string name="population_title">Population</string>
+    <string name="img_content_description">flag</string>
+    <string-array name="sort_options">
+        <item>Alphabetical A to Z</item>
+        <item>Alphabetical Z to A</item>
+        <item>Population Top</item>
+        <item>Population Bottom</item>
+
+    </string-array>
+</resources>
